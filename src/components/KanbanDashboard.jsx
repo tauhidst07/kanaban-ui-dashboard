@@ -223,9 +223,8 @@ const KanbanDashboard = () => {
             onDragStart={onDragStart}
             measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
         >
-            <div className="flex h-screen bg-linear-to-br from-gray-50 to-blue-50 font-inter">
+            <div className="flex h-screen bg-linear-to-br from-gray-50 to-blue-50 font-inter ">
                 <Sidebar />
-
                 {/* MAIN WRAPPER */}
                 <div className="flex-1 flex flex-col overflow-hidden">
                     {/* HEADER */}
@@ -317,7 +316,7 @@ const KanbanDashboard = () => {
                                 return (
                                     <div
                                         key={key}
-                                        className="flex-1 min-w-[18rem] max-w-[20rem] flex flex-col h-full"
+                                        className="flex-1 min-w-[16rem] max-w-[18rem] flex flex-col h-full"
                                     >
                                         {/* COLUMN HEADER */}
                                         <div className="flex items-center mb-4">
