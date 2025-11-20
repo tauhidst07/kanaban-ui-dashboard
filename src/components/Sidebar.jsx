@@ -12,7 +12,7 @@ const Sidebar = () => {
                 SlothUI
             </span>
         </div>
-       
+
 
         {/* Menu */}
         <nav className="flex-1 space-y-2">
@@ -48,7 +48,15 @@ const Sidebar = () => {
 
         {/* User */}
         <div className="flex items-center gap-4 pt-6 border-t border-gray-200">
-            <div className="w-11 h-11 rounded-full bg-linear-to-br from-pink-400 to-purple-500"></div>
+
+            {/* Avatar Image */}
+            <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Sarah Johnson"
+                className="w-11 h-11 rounded-full object-cover border border-gray-300 shadow-sm"
+            />
+
+            {/* User Info */}
             <div className="flex-1">
                 <p className="font-inter text-sm font-semibold text-gray-800">
                     Sarah Johnson
@@ -57,6 +65,8 @@ const Sidebar = () => {
                     sarah@slothui.com
                 </p>
             </div>
+
+            {/* Bell Icon */}
             <Bell
                 size={20}
                 className="text-gray-400 hover:text-purple-500 cursor-pointer"
