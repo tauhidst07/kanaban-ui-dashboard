@@ -59,7 +59,17 @@ const KanbanDashboard = () => {
        DnD Kit sensors
     --------------------------- */
     const sensors = useSensors(
-        useSensor(PointerSensor),
+        useSensor(PointerSensor, {
+            activationConstraint: {
+                distance: 5, // user must move 5px before drag begins
+            },
+        }),
+        useSensor(TouchSensor, {
+            activationConstraint: {
+                delay: 120,
+                tolerance: 8,
+            },
+        }),
         useSensor(KeyboardSensor)
     );
 
@@ -294,8 +304,8 @@ const KanbanDashboard = () => {
                                         key={idx}
                                         onClick={() => setActiveFilter(filter)}
                                         className={`cursor-pointer px-3.5 py-2 rounded-xl font-inter text-sm transition-all ${activeFilter === filter
-                                                ? "bg-linear-to-r from-purple-500 to-blue-500 text-white shadow-md"
-                                                : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                                            ? "bg-linear-to-r from-purple-500 to-blue-500 text-white shadow-md"
+                                            : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                                             }`}
                                     >
                                         {filter}
