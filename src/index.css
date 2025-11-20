@@ -13,3 +13,6 @@
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* Chrome, Safari */
 }
+* {
+  touch-action: pan-y;
+}
