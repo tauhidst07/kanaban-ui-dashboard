@@ -20,6 +20,7 @@ import {
     closestCenter,
     DragOverlay,
     MeasuringStrategy,
+    TouchSensor,
 } from "@dnd-kit/core";
 
 import {
