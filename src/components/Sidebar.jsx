@@ -4,14 +4,16 @@ import React from 'react'
 const Sidebar = () => {
     return <div className="w-60 bg-white border-r border-gray-200 flex flex-col px-6 py-8 shadow-sm ">
         {/* Logo */}
-        <div className="flex items-center gap-4 mb-10">
-            <div className="w-11 h-11 rounded-2xl bg-linear-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                S
+        <div className="flex items-center gap-3 mb-10">
+            <div className="w-12 h-12 rounded-full bg-linear-to-br from-purple-500 to-blue-500 shadow-md flex items-center justify-center">
+                <span className="text-white font-bold text-lg tracking-wide">S</span>
             </div>
-            <span className="font-jakarta text-2xl font-semibold text-gray-800">
-                SlothUI
+
+            <span className="font-jakarta text-2xl font-bold text-gray-900 tracking-tight">
+                Sloth<span className="text-purple-600">UI</span>
             </span>
         </div>
+
 
 
         {/* Menu */}
